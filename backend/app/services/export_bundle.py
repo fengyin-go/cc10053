@@ -22,7 +22,6 @@ class ExportBundleService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：打包导出与分卷生成 ----
-
     VOLUME_SIZE = 100
 
     def start_packaging(self, entry_id: int) -> dict[str, Any]:

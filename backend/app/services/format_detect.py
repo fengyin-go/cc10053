@@ -22,7 +22,6 @@ class FormatDetectService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：格式识别与分支路由 ----
-
     def detect_format(self, entry_id: int) -> dict[str, Any]:
         """识别文件格式：按指纹后缀推断格式、置信度与处理分支。"""
         entry = store.find(self.MODULE, entry_id)

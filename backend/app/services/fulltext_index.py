@@ -22,7 +22,6 @@ class FulltextIndexService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：分片构建与合并水位 ----
-
     MERGE_WATERMARK_STEP = 10
 
     def build_shard(self, entry_id: int) -> dict[str, Any]:

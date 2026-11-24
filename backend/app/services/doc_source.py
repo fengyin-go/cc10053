@@ -22,7 +22,6 @@ class DocSourceService(BaseModuleService):
     NEGATIVE_ACTIONS = ["停用源"]
 
     # ---- 业务扩展：源验证与采集接入 ----
-
     def verify_source(self, entry_id: int) -> dict[str, Any]:
         """验证文档源可连通性：检查接入方式与采集范围配置完整。"""
         entry = store.find(self.MODULE, entry_id)

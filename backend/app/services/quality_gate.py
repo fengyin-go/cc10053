@@ -22,7 +22,6 @@ class QualityGateService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：质量检查与拦截分流 ----
-
     FULL_BLOCK_RATIO = 0.5
 
     def run_check(self, entry_id: int) -> dict[str, Any]:

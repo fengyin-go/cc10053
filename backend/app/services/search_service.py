@@ -22,7 +22,6 @@ class SearchServiceService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：查询执行与慢查治理 ----
-
     SLOW_MS = 500
 
     def run_query(self, entry_id: int) -> dict[str, Any]:

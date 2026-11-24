@@ -22,7 +22,6 @@ class CatalogReviewService(BaseModuleService):
     NEGATIVE_ACTIONS = ["驳回记录"]
 
     # ---- 业务扩展：人工复核与办结回流 ----
-
     def approve_record(self, entry_id: int, reviewer: str) -> dict[str, Any]:
         """通过复核：回写复核角色与时间，回流编目器确认编目。"""
         entry = store.find(self.MODULE, entry_id)

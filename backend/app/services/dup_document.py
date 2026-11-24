@@ -22,7 +22,6 @@ class DupDocumentService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：指纹查重与相似判定 ----
-
     SIM_THRESHOLD = 0.92
 
     def run_dedup(self, entry_id: int) -> dict[str, Any]:

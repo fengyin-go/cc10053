@@ -22,7 +22,6 @@ class TextCleanService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：文本清洗与下游派发 ----
-
     NOISE_CHARS = ("", "□", "\ufffd")
 
     def run_clean(self, entry_id: int) -> dict[str, Any]:

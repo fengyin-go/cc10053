@@ -22,7 +22,6 @@ class DocClassifyService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：自动分类与人工流转 ----
-
     CONF_THRESHOLD = 0.85
     CATEGORY_HINTS = {"报告": "F2", "通知": "G4", "纪要": "C9", "方案": "B1"}
 

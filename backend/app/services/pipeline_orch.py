@@ -22,7 +22,6 @@ class PipelineOrchService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：管线编排与阶段推进 ----
-
     STAGE_CHAIN = ["采集", "识别", "抽取", "清洗", "编目", "归档"]
 
     def start_pipeline(self, entry_id: int) -> dict[str, Any]:

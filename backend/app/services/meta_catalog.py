@@ -22,7 +22,6 @@ class MetaCatalogService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：编目执行与冲突处理 ----
-
     LEVEL_RULES = {"一级": 90, "二级": 75, "三级": 60}
 
     def run_catalog(self, entry_id: int) -> dict[str, Any]:

@@ -22,7 +22,6 @@ class RetentionPolicyService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：规则生效与清理计划 ----
-
     def activate_rule(self, entry_id: int) -> dict[str, Any]:
         """生效规则：校验层级存在归档数据后激活规则。"""
         entry = store.find(self.MODULE, entry_id)

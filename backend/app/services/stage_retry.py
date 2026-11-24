@@ -22,7 +22,6 @@ class StageRetryService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：断点重试与恢复回流 ----
-
     MAX_RETRIES = 5
 
     def execute_retry(self, entry_id: int) -> dict[str, Any]:

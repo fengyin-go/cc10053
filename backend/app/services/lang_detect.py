@@ -22,7 +22,6 @@ class LangDetectService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：语种检测与编码转换 ----
-
     ENCODE_PLAN = {"中文": "UTF-8", "英文": "UTF-8", "日文": "SHIFT-JIS", "俄文": "UTF-8"}
 
     def run_detect(self, entry_id: int) -> dict[str, Any]:

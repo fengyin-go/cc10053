@@ -22,7 +22,6 @@ class OcrExtractService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：OCR抽取与下游重建 ----
-
     def run_extract(self, entry_id: int) -> dict[str, Any]:
         """执行抽取：产出样例抽取文本与置信度均值，标记已抽取。"""
         entry = store.find(self.MODULE, entry_id)

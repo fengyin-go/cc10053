@@ -22,7 +22,6 @@ class ArchiveStoreService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：分层归档与下游消费 ----
-
     def run_archive(self, entry_id: int) -> dict[str, Any]:
         """执行归档：按层级分配存储位置并标记已归档。"""
         entry = store.find(self.MODULE, entry_id)

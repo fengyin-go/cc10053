@@ -22,7 +22,6 @@ class FileIngestService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：批次执行与下游推送 ----
-
     def complete_batch(self, entry_id: int) -> dict[str, Any]:
         """完成采集批次：为每个文件生成格式识别记录并推给格式识别器。"""
         entry = store.find(self.MODULE, entry_id)

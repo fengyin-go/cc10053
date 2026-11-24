@@ -22,7 +22,6 @@ class LayoutRebuildService(BaseModuleService):
     NEGATIVE_ACTIONS = []
 
     # ---- 业务扩展：版面重建与下游派发 ----
-
     def run_rebuild(self, entry_id: int) -> dict[str, Any]:
         """执行重建：计算版面块数、表格块数与重建质量。"""
         entry = store.find(self.MODULE, entry_id)

@@ -22,7 +22,6 @@ class IngestMetricsService(BaseModuleService):
     NEGATIVE_ACTIONS = ["忽略波动"]
 
     # ---- 业务扩展：量级统计与波动检测 ----
-
     FLUCTUATION_RATIO = 0.4
 
     def take_snapshot(self, source_name: str) -> dict[str, Any]:
